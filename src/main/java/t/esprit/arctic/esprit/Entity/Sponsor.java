@@ -4,16 +4,19 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import java.time.LocalDate;
 
 @Entity
-public class Course {
+public class Sponsor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCourse;
+    private Long idSponsor;
 
-    private String emplacement;
+    private String nom;
 
-    private LocalDate dateCourse;
+    private String pays;
+
+    private Float budgetAnnuel;
+
+    private Boolean bloquerContrat;
 }

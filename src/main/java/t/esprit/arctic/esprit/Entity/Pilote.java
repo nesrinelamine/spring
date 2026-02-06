@@ -4,16 +4,17 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import java.time.LocalDate;
 
 @Entity
-public class Course {
+public class Pilote {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idCourse;
+    private Long idPilote;
 
-    private String emplacement;
+    private String libelleP;
 
-    private LocalDate dateCourse;
+    private Integer nbPointsTotal;
+
+    private Integer classementGeneral;
 }
